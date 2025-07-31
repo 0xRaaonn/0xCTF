@@ -1,0 +1,2 @@
+Reverse engineer the Python bytecode file 'secret_program.pyc'.
+Hint: Python bytecode can be decompiled back to source code.

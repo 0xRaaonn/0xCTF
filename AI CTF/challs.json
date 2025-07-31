@@ -1,0 +1,211 @@
+{
+    "data": {
+        "Cryptography": [
+            {
+                "category": "Cryptography",
+                "description": "An old communication method still used today. Listen carefully to the rhythm.",
+                "files": [
+                    "/files/c46b28df09bbe2df4a8adda05a42aa02/challenge.txt?token=eyJ1c2VyX2lkIjoyMiwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6N30.aIl9YA.xWffg0Cy2gR2x4lgSX-ZyB36YdU"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 4,
+                "name": "Dots and Dashes",
+                "points": 100,
+                "solves": 0
+            },
+            {
+                "category": "Cryptography",
+                "description": "This message has been encoded multiple times. Can you peel back all the layers?",
+                "files": [
+                    "/files/935956c0e8bf2f8241b0d7492fe0a9db/challenge.txt?token=eyJ1c2VyX2lkIjoyMiwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6NX0.aIl9YA.2eSpIDMuPU6AO1SpQIyd-XTX1zk"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 2,
+                "name": "Layers of Confusion",
+                "points": 150,
+                "solves": 0
+            },
+            {
+                "category": "Cryptography",
+                "description": "A classic cipher awaits your decryption skills. The message has been shifted, but by how much?",
+                "files": [
+                    "/files/4a3af1791cd811048c6777cf2d766a3b/challenge.txt?token=eyJ1c2VyX2lkIjoyMiwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6NH0.aIl9Xw.PDbZzU7oVDx47niukytF0__Kbxk"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 1,
+                "name": "Caesar's Secret",
+                "points": 100,
+                "solves": 0
+            },
+            {
+                "category": "Cryptography",
+                "description": "A simple XOR cipher with a known key. Sometimes the simplest methods are the most effective.",
+                "files": [
+                    "/files/09bffa4018b662a8d61075c62e654097/challenge.txt?token=eyJ1c2VyX2lkIjoyMiwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6Nn0.aIl9YA.QAqAknC5d6l2_W4YeLf-yiRYgvs"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 3,
+                "name": "XOR Adventure",
+                "points": 150,
+                "solves": 0
+            }
+        ],
+        "Forensics": [
+            {
+                "category": "Forensics",
+                "description": "This ZIP file is password protected. Can you crack it using the provided wordlist?",
+                "files": [
+                    "/files/7446363fe4d24884b3a16a18c45082ba/challenge.txt?token=eyJ1c2VyX2lkIjoyMiwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6MTB9.aIl9YA.3J1K_zvkT0tpIWi92Q_3-DMAwZw",
+                    "/files/806063ccc3e8cc3e5531144b0ee90dcb/protected.zip?token=eyJ1c2VyX2lkIjoyMiwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6MTF9.aIl9YA.7Whlw-tqoDm-nKbcOny5jtvvajg",
+                    "/files/a44ab8db11a7a0f7423ab981e514aad3/wordlist.txt?token=eyJ1c2VyX2lkIjoyMiwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6MTJ9.aIl9YA.U4YFRHJbHRagQREmIVzOOmyNed8"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 6,
+                "name": "Locked Archive",
+                "points": 150,
+                "solves": 0
+            },
+            {
+                "category": "Forensics",
+                "description": "The flag is embedded in this image, but not where you might expect. Look deeper.",
+                "files": [
+                    "/files/9315b1bbdc3634933358161a967f4854/challenge.txt?token=eyJ1c2VyX2lkIjoyMiwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6OH0.aIl9YA.lk-juSZOa4SyKBc6gLvAidzQqa4",
+                    "/files/cd81e3469804713614d91f2c4115ca8e/challenge.png?token=eyJ1c2VyX2lkIjoyMiwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6OX0.aIl9YA.rd9w2l_ADMoaUFTu3Q-TtAzf7sQ"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 5,
+                "name": "Hidden in Plain Sight",
+                "points": 200,
+                "solves": 0
+            },
+            {
+                "category": "Forensics",
+                "description": "The flag is buried somewhere in this binary file. Use your hex analysis skills to find it.",
+                "files": [
+                    "/files/e7097f5466a99e1460b535946f044576/challenge.txt?token=eyJ1c2VyX2lkIjoyMiwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6MTZ9.aIl9YA.TG40eYLMe2KvmfGXaXV46yShZqM",
+                    "/files/086e187db58c813718749dc60f7f6f2f/data.bin?token=eyJ1c2VyX2lkIjoyMiwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6MTd9.aIl9YA.IpiIL9zB7jjPyEYUlF_rWajHbSQ"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 8,
+                "name": "Hex Hunter",
+                "points": 200,
+                "solves": 0
+            },
+            {
+                "category": "Forensics",
+                "description": "Sometimes the most important information isn't in the content, but in the details about the content.",
+                "files": [
+                    "/files/09810f24c40810a7932c8dc171c361d6/photo.jpg?token=eyJ1c2VyX2lkIjoyMiwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6MTR9.aIl9YA.5nJUYZlYRigsin73E2FD2vlyhO4"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 7,
+                "name": "Metadata Detective",
+                "points": 150,
+                "solves": 0
+            }
+        ],
+        "Reverse Engineering": [
+            {
+                "category": "Reverse Engineering",
+                "description": "This binary uses XOR encryption. Analyze it to find the key and decrypt the flag.",
+                "files": [
+                    "/files/e234b1507257907621e3f84f78f05b87/xor_challenge?token=eyJ1c2VyX2lkIjoyMiwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6MzB9.aIl9YA.xpP2zQalKobbJdZkNk31IwsUraE"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 11,
+                "name": "XOR Reverse",
+                "points": 300,
+                "solves": 0
+            },
+            {
+                "category": "Reverse Engineering",
+                "description": "This compiled Python code hides a secret. Can you recover the original source?",
+                "files": [
+                    "/files/384a5d844a48576712e1e2adc003db72/challenge.txt?token=eyJ1c2VyX2lkIjoyMiwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6MjF9.aIl9YA.DsWEmXuo8q73zo9T1Las3lZw3dw",
+                    "/files/4656427722b519cd502b1c76ea69e37a/secret_program.pyc?token=eyJ1c2VyX2lkIjoyMiwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6MjJ9.aIl9YA.koaHZyRfLJT8YTCo1sDTkdDDUYA"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 10,
+                "name": "Python Secrets",
+                "points": 250,
+                "solves": 0
+            },
+            {
+                "category": "Reverse Engineering",
+                "description": "This program checks for a password. Can you find what it's looking for without running it?",
+                "files": [
+                    "/files/8261b790c54b912376767669a341e7b3/password_check?token=eyJ1c2VyX2lkIjoyMiwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6Mjl9.aIl9YA.T3Gn1uCSZGanrZV3ffP6IqdJ-qs"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 9,
+                "name": "Password Checker",
+                "points": 200,
+                "solves": 0
+            },
+            {
+                "category": "Reverse Engineering",
+                "description": "The flag is hidden somewhere in the binary's strings. Can you piece it together?",
+                "files": [
+                    "/files/fd6010b7f07c372322a26d593354ad0d/string_challenge?token=eyJ1c2VyX2lkIjoyMiwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6MzF9.aIl9YA.jGi5-xrBlsKsqjIHx72GgYOy0pU"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 12,
+                "name": "String Hunter",
+                "points": 200,
+                "solves": 0
+            }
+        ],
+        "Web Exploitation": [
+            {
+                "category": "Web Exploitation",
+                "description": "This login form looks vulnerable to SQL injection. Can you bypass it and find user with the flag? Access at https://web1.cyber673.com",
+                "files": [],
+                "hints": [
+                    "-"
+                ],
+                "id": 13,
+                "name": "SQL Injection Basics",
+                "points": 250,
+                "solves": 0
+            },
+            {
+                "category": "Web Exploitation",
+                "description": "This file server has a directory traversal vulnerability. Can you read files outside the intended directory? Access at https://web2.cyber673.com",
+                "files": [],
+                "hints": [
+                    "-"
+                ],
+                "id": 14,
+                "name": "Path Traversal",
+                "points": 200,
+                "solves": 0
+            }
+        ]
+    },
+    "title": "AI CTF",
+    "url": "https://aictf.cyber673.com"
+}

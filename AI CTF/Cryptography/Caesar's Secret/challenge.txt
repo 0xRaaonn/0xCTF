@@ -1,0 +1,2 @@
+Encrypted message: NVPGS{JRYPBZR_GB_GUR_PELCGB_JBEYQ}
+Hint: This is a classic substitution cipher with a fixed shift.

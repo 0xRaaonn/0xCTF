@@ -1,0 +1,3 @@
+The flag is inside the password-protected ZIP file 'protected.zip'
+A wordlist has been provided: wordlist.txt
+Hint: The password is commonly used and weak.

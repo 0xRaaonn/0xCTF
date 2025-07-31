@@ -1,0 +1,3 @@
+Analyze the binary file 'data.bin' to find the hidden flag.
+Hint: Use hex dump tools to examine the file contents.
+The flag starts around offset 0x1F4.

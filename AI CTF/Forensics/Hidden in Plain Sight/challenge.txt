@@ -1,0 +1,2 @@
+The flag is hidden in the image file 'challenge.png'
+Hint: Sometimes the least significant details matter most.
