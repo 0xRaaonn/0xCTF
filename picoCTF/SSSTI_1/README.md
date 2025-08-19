@@ -1,4 +1,4 @@
-##SSTI1
+## SSTI1
 
 - Author: Venax
 
