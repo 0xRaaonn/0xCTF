@@ -1,7 +1,8 @@
-Author: Venax
+- Author: Venax
 
-Description
+- Description
 
 I made a cool website where you can announce whatever you want! Try it out!
 Additional details will be available after launching your challenge instance.
-test
+
+I heard templating is a cool and modular way to build web apps! Check out my website here!
