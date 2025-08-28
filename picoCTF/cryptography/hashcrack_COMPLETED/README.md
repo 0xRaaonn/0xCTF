@@ -41,7 +41,8 @@ Access: `nc verbal-sleep.picoctf.net 65347`
      916e8c4f79b25028c9e467f1eb8eee6d6bbdff965f9928310ad30a8d88697745 → qwerty098
      ```
 
-   Tools used:
+4. **Tools used**
+
    - `john` with `--format=raw-md5`, `raw-sha1`, `raw-sha256`
 
 ```
@@ -60,10 +61,10 @@ hashcat -m 1400 -a 0 hash.txt /usr/share/wordlists/rockyou.txt --force
 hashcat -m 1400 --show hash.txt
 ```
 
-4. **Authenticate with cracked passwords:**
+5. **Authenticate with cracked passwords:**
    Each cracked password was submitted to the service. On the final hash, providing `qwerty098` unlocked the secret.
 
-5. **Flag Obtained:**
+6. **Flag Obtained:**
    ```
    picoCTF{UseStr0nG_h@shEs_&PaSswDs!_eb2f8459}
    ```
