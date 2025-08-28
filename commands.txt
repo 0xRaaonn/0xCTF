@@ -1,0 +1,32 @@
+togit / togit "message"
+fromgit
+deletegit
+deltegitfolder
+virtual
+
+readme -n
+readme -a
+readme -o
+readme -s
+
+flagsolve
+
+flagshow
+
+completecd ..
+
+xdg-open . (current directory)
+
+xdg-open /path/to/your/folder
+picoctf
+ctf
+
+
+
+gnome-screenshot -i
+
+open
+
+web
+
+folder
