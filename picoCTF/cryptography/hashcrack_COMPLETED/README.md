@@ -43,7 +43,22 @@ Access: `nc verbal-sleep.picoctf.net 65347`
 
    Tools used:
    - `john` with `--format=raw-md5`, `raw-sha1`, `raw-sha256`
+
+```
+echo '916e8c4f79b25028c9e467f1eb8eee6d6bbdff965f9928310ad30a8d88697745' > hash.txt
+john --format=raw-sha256 --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
+john --show --format=raw-sha256 hash.txt
+```
+
    - `hashcat` with modes `-m 0`, `-m 100`, and `-m 1400`
+
+```
+echo '916e8c4f79b25028c9e467f1eb8eee6d6bbdff965f9928310ad30a8d88697745' > hash.txt
+# SHA-256 = -m 1400 ; straight dictionary = -a 0
+hashcat -m 1400 -a 0 hash.txt /usr/share/wordlists/rockyou.txt --force
+# when it cracks, show the plaintext:
+hashcat -m 1400 --show hash.txt
+```
 
 4. **Authenticate with cracked passwords:**
    Each cracked password was submitted to the service. On the final hash, providing `qwerty098` unlocked the secret.
