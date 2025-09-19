@@ -1,0 +1,16 @@
+Oct 10 05:30:10 server systemd[1]: Started Daily apt upgrade and clean activities.
+Oct 10 00:00:16 gridsecure-server kernel: [ICS_ALERT] Unauthorized access attempt to SCADA control system from 192.168.1.45
+Oct 10 00:06:53 gridsecure-server kernel: [ICS_ALERT] Industrial protocol scan detected from 172.16.0.34
+Oct 10 00:14:27 gridsecure-server kernel: [ICS_ALERT] Modbus protocol manipulation attempt from 203.0.113.42
+Oct 10 06:15:48 gridsecure-server kernel: [CRITICAL] DNP3 protocol attack detected from 192.168.1.123
+Oct 10 06:22:51 gridsecure-server kernel: [CRITICAL] S7comm protocol manipulation attempt
+Oct 10 08:00:12 gridsecure-server kernel: [IRON_STORM_ALERT] Iron Storm APT activity detected - transformer specs access attempt
+Oct 10 08:17:27 gridsecure-server kernel: [IRON_STORM_ALERT] Iron Storm reconnaissance - Modbus protocol enumeration
+Oct 10 09:30:24 gridsecure-server kernel: [CRITICAL] Network topology access attempt blocked
+Oct 10 09:45:59 gridsecure-server kernel: [ICS_ALERT] BACnet enumeration attempt detected
+Oct 10 12:15:18 gridsecure-server kernel: [PROTOCOL] OPC-UA discovery attempt detected
+Oct 10 12:45:15 gridsecure-server kernel: [ICS_ALERT] IEC-61850 protocol scan detected
+Oct 10 14:00:21 gridsecure-server kernel: [IRON_STORM_ALERT] Iron Storm backdoor installation attempt - C2 beacon detected
+Oct 10 15:00:27 gridsecure-server kernel: [IRON_STORM_ALERT] Iron Storm privilege escalation attempt detected
+Oct 10 17:45:18 gridsecure-server kernel: [MAPPING] Infrastructure mapping tool detected
+Oct 10 18:45:27 gridsecure-server kernel: [MAPPING] Security blueprint access attempt blocked 

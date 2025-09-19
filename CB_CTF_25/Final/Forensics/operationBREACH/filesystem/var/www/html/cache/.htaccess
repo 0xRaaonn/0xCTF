@@ -1,0 +1,30 @@
+# Cache Directory Configuration
+# This directory contains cached files and should not be accessible via web
+
+# Deny access to all files
+<Files "*">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Deny access to all directories
+<Directory "*">
+    Order allow,deny
+    Deny from all
+</Directory>
+
+# Prevent directory listing
+Options -Indexes
+
+# Set cache headers
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options nosniff
+    Header set X-Frame-Options DENY
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule> 

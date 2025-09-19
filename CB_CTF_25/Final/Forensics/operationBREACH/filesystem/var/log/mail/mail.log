@@ -1,0 +1,8 @@
+Oct 10 00:00:16 gridsecure-server postfix/smtpd[1234]: warning: host 192.168.1.45: suspicious email from "scada_alert@malicious.com"
+Oct 10 06:19:43 gridsecure-server postfix/smtpd[1299]: warning: host 10.0.0.67: relay configuration phishing from "relay_admin@attack.com"
+Oct 10 08:13:03 gridsecure-server postfix/smtpd[1304]: warning: host 172.16.0.34: APT32 spear phishing from "oceanlotus@malicious.com"
+Oct 10 09:15:59 gridsecure-server postfix/smtpd[1309]: warning: host 203.0.113.10: SCADA network scan email from "scada_scanner@malicious.com"
+Oct 10 12:30:42 gridsecure-server postfix/smtpd[1319]: warning: host 10.0.0.34: HMI interface phishing from "hmi_interface@malicious.com"
+Oct 10 14:45:58 gridsecure-server postfix/smtpd[1326]: warning: host 203.0.113.34: APT37 persistence email from "reaper@malware.com"
+Oct 10 16:15:22 gridsecure-server postfix/smtpd[1332]: warning: host 10.0.0.45: infrastructure sabotage email from "sabotage_plan@attack.com"
+Oct 10 18:30:59 gridsecure-server postfix/smtpd[1341]: warning: host 192.168.1.90: system architecture email from "sys_arch@attack.com" 

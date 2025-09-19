@@ -1,0 +1,18 @@
+# Nginx Error Log - October 10, 2023
+
+2023/10/10 00:00:16 [error] 1234#0: *5743 access forbidden by rule, client: 192.168.1.45, server: gridsecure.com, request: "GET /classified/reactor_status.json HTTP/1.1", host: "gridsecure.com"
+2023/10/10 00:04:03 [error] 1234#0: *5744 access forbidden by rule, client: 10.0.0.23, server: gridsecure.com, request: "HEAD /control_systems/turbine.cfg HTTP/1.1", host: "gridsecure.com"
+2023/10/10 00:06:53 [error] 1234#0: *5745 access forbidden by rule, client: 172.16.0.34, server: gridsecure.com, request: "POST /api/scada/metrics HTTP/1.1", host: "gridsecure.com"
+2023/10/10 00:08:09 [error] 1234#0: *5746 file not found, client: 192.168.1.89, server: gridsecure.com, request: "GET /control_systems/plc_backup.zip HTTP/1.1", host: "gridsecure.com"
+2023/10/10 00:14:27 [error] 1234#0: *5747 access forbidden by rule, client: 203.0.113.42, server: gridsecure.com, request: "POST /api/modbus/read HTTP/1.1", host: "gridsecure.com"
+
+# Around the real attack window
+2023/10/10 06:12:00 [error] 1234#0: *5750 access forbidden by rule, client: 203.0.113.77, server: gridsecure.com, request: "GET /download?file=../../../etc/shadow HTTP/1.1", host: "gridsecure.com"
+2023/10/10 06:12:30 [error] 1234#0: *5751 access forbidden by rule, client: 203.0.113.77, server: gridsecure.com, request: "GET /download?file=../../../root/.ssh/id_rsa HTTP/1.1", host: "gridsecure.com"
+2023/10/10 06:12:45 [error] 1234#0: *5752 access forbidden by rule, client: 203.0.113.77, server: gridsecure.com, request: "GET /download?file=../../../var/www/html/admin/config.php HTTP/1.1", host: "gridsecure.com"
+
+# Recon/noise after the real attack
+2023/10/10 07:00:41 [error] 1234#0: *5753 access forbidden by rule, client: 192.168.1.45, server: gridsecure.com, request: "GET /api/profinet/discover HTTP/1.1", host: "gridsecure.com"
+2023/10/10 08:13:03 [error] 1234#0: *5754 access forbidden by rule, client: 172.16.0.34, server: gridsecure.com, request: "POST /api/ics/command HTTP/1.1", host: "gridsecure.com"
+2023/10/10 09:15:59 [error] 1234#0: *5755 file not found, client: 203.0.113.10, server: gridsecure.com, request: "POST /control_systems/device_scan HTTP/1.1", host: "gridsecure.com"
+2023/10/10 10:00:00 [error] 1234#0: *5756 access forbidden by rule, client: 203.0.113.25, server: gridsecure.com, request: "GET /control_systems/rtus.xml HTTP/1.1", host: "gridsecure.com"

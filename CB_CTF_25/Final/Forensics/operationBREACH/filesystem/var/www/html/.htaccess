@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Normalize /download to download.php
+RewriteRule ^download$ download.php [L,QSA]
+
+

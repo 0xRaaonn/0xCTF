@@ -1,0 +1,10 @@
+Oct 10 05:30:01 server kernel: [    0.000000] Linux version 5.4.0-42-generic
+Oct 10 05:30:02 server kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-42-generic
+Oct 10 05:30:03 server kernel: [    0.000000] KERNEL supported cpus:
+Oct 10 05:30:04 server systemd[1]: systemd 245.4-4ubuntu3.2 running in system mode.
+Oct 10 05:30:05 server systemd[1]: Detected virtualization kvm.
+Oct 10 05:30:06 server systemd[1]: Detected architecture x86-64.
+Oct 10 05:30:07 server systemd[1]: Set hostname to <server>.
+Oct 10 05:30:08 server systemd[1]: Initializing machine ID from random generator.
+Oct 10 05:30:09 server systemd[1]: Started Daily apt download activities.
+Oct 10 05:30:10 server systemd[1]: Started Daily apt upgrade and clean activities. 

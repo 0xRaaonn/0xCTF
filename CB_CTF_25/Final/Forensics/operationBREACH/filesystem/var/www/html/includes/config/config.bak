@@ -1,0 +1,38 @@
+<?php
+// GridSecure Industries - Backup Configuration
+// This is a backup of the main configuration file
+
+// Database configuration
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'gridsecure_infrastructure');
+define('DB_USER', 'gridsecure_admin');
+define('DB_PASS', 'old_password_2022');
+
+// Application configuration
+define('APP_NAME', 'GridSecure Industries');
+define('APP_VERSION', '0.9.5');
+define('APP_URL', 'https://gridsecure.com');
+
+// Security settings
+define('SESSION_TIMEOUT', 1800); // 30 minutes
+define('MAX_LOGIN_ATTEMPTS', 3);
+define('PASSWORD_MIN_LENGTH', 6);
+
+// File upload settings
+define('MAX_UPLOAD_SIZE', 2097152); // 2MB
+define('ALLOWED_FILE_TYPES', ['jpg', 'jpeg', 'png']);
+
+// Error reporting
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('log_errors', 1);
+ini_set('error_log', '/var/log/php/error.log');
+
+// Timezone
+date_default_timezone_set('UTC');
+
+// Start session if not already started
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?> 

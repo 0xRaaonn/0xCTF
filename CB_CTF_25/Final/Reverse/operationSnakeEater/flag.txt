@@ -1,0 +1,1 @@
+CBCTF{dummy_local_flag}

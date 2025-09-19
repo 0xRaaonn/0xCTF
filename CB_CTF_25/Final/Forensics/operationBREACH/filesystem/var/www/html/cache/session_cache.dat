@@ -1,0 +1,15 @@
+# Session Cache Data
+# Generated: 2024-01-15 14:30:25
+# Expires: 2024-01-15 15:30:25
+
+session_id: abc123def456ghi789
+user_id: 1
+username: admin
+role: admin
+last_activity: 2024-01-15 14:30:25
+ip_address: 192.168.1.100
+user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+session_data: {"theme":"dark","language":"en","preferences":{"notifications":true,"email_alerts":false}}
+cache_hits: 47
+cache_misses: 3
+expired_sessions: 12 

@@ -1,0 +1,10 @@
+THREAT ACTOR PROFILE: "IRON STORM" APT GROUP
+Background: Iron Storm is a sophisticated nation-state sponsored Advanced Persistent Threat (APT) group believed to be operating out of Eastern Europe, with ties to foreign intelligence services. This group specializes in critical infrastructure targeting and has been linked to previous energy sector compromises.
+
+ATTACK TIMELINE:
+Phase 1 - Reconnaissance (00:00 - 06:00 UTC): Network scanning and vulnerability identification
+Phase 2 - Initial Compromise (06:13 UTC): Path traversal exploitation of file download system
+Phase 3 - Data Exfiltration (06:13 - 06:14 UTC): Systematic download of sensitive files
+Phase 4 - Persistence (Ongoing): Web shell and backdoor deployment
+
+Your Mission: Analyze the forensic evidence to determine the scope of the Iron Storm attack, identify their specific activities, and answer all questions correctly to map their complete operation.

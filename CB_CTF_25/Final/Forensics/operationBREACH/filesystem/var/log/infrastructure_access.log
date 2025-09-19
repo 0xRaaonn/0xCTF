@@ -1,0 +1,10 @@
+2024-01-15 14:30:25 [INFRASTRUCTURE_ACCESS] IP: 192.168.1.100, File: scada_configs.zip, Result: DENIED - No authentication
+2024-01-15 14:30:26 [INFRASTRUCTURE_ACCESS] IP: 203.0.113.42, File: grid_topology.rar, Result: DENIED - Invalid access level
+2024-01-15 14:30:27 [INFRASTRUCTURE_ACCESS] IP: 172.16.0.34, File: operator_access.txt, Result: DENIED - No encryption key
+2024-01-15 14:30:28 [INFRASTRUCTURE_ACCESS] IP: 10.0.0.23, File: scada_configs.zip, Result: DENIED - IP not whitelisted
+2024-01-15 14:30:29 [INFRASTRUCTURE_ACCESS] IP: 192.168.1.67, File: grid_topology.rar, Result: DENIED - Session expired
+2024-01-15 14:30:30 [INFRASTRUCTURE_ACCESS] IP: 203.0.113.25, File: operator_access.txt, Result: DENIED - Invalid user agent
+2024-01-15 14:30:31 [INFRASTRUCTURE_ACCESS] IP: 172.16.0.78, File: scada_configs.zip, Result: DENIED - Rate limit exceeded
+2024-01-15 14:30:32 [INFRASTRUCTURE_ACCESS] IP: 10.0.0.45, File: grid_topology.rar, Result: DENIED - File not found in secure storage
+2024-01-15 14:30:33 [INFRASTRUCTURE_ACCESS] IP: 192.168.1.89, File: operator_access.txt, Result: DENIED - Encryption key mismatch
+2024-01-15 14:30:34 [INFRASTRUCTURE_ACCESS] IP: 203.0.113.10, File: scada_configs.zip, Result: DENIED - Database connection failed

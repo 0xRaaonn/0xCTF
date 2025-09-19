@@ -1,0 +1,12 @@
+secret
+password
+changeme
+letmein
+jwtsecret
+supersecret
+admin
+meow
+meow123
+meow!123
+cat
+kitty
