@@ -1,0 +1,48 @@
+togit / togit "message"
+fromgit
+deletegit
+deltegitfolder
+virtual
+
+readme -n
+readme -a
+readme -o
+readme -s
+
+flagsolve
+
+flagshow
+
+completecd ..
+
+xdg-open . (current directory)
+
+xdg-open /path/to/your/folder
+picoctf
+ctf
+
+
+
+gnome-screenshot -i
+
+open
+
+web
+
+folder
+
+WSL commands
+openzbash = to open ~/.zshrc file in either nano or vs
+reloadzbash = reload ~/.zshrc file using source ~/.zshrc
+echozbash = put a line into ~/.zshrc
+ctf = go direct to 0xCTF folder
+pico = go directly to picoCTF folder
+folder = create a folder and go into that folder
+open = open the current directory from terminal
+dl = copy the file from downloads folder to wsl folder
+fromgit = stash first, the pull with rebase, pull lfs then restore stashed changes
+togit = add current work, commit, pull then push then push lfs
+virtual = create a virtual environment
+flagsolve = add flag into README.md at the very bottom
+
+
