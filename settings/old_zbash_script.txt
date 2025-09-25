@@ -1,0 +1,104 @@
+deletegit() {
+  if [ -z "$1" ]; then
+    echo "Usage: deletegit <file_path> [commit_message]"
+    return 1
+  fi
+
+  local file=$1
+  shift
+
+  if [ ! -f "$file" ]; then
+    echo "File '$file' does not exist."
+    return 1
+  fi
+
+  git rm "$file"
+  
+  local msg=${1:-"deleted $file"}
+
+  git commit -m "$msg"
+  git push
+}
+
+deletegitfolder() {
+  if [ -z "$1" ]; then
+    echo "Usage: deletegitfolder <folder_path> [commit_message]"
+    return 1
+  fi
+
+  local folder=$1
+  shift
+
+  if [ ! -d "$folder" ]; then
+    echo "Folder '$folder' does not exist."
+    return 1
+  fi
+
+  git rm -r "$folder"
+
+  local msg=${1:-"deleted folder $folder"}
+
+  git commit -m "$msg"
+  git push
+}
+
+readme() {
+    if [ -z "$1" ]; then
+        echo "Usage: readme {-n|-a|-o|-s} \"description\""
+        return 1
+    fi
+
+    flag="$1"
+    # Combine all arguments after the flag for multi-word text
+    text="${@:2}"
+
+    case "$flag" in
+        -n)
+            if [ ! -f README.md ]; then
+                echo "$text" > README.md
+                echo "Created new README.md with: $text"
+            else
+                echo "⚠️ README.md already exists! Use -a to append or -o to overwrite."
+            fi
+            ;;
+        -a)
+            # Add a newline before appending
+            echo "" >> README.md
+            echo "$text" >> README.md
+            echo "Appended to README.md: $text"
+            ;;
+        -o)
+            echo "$text" > README.md
+            echo "Overwrote README.md with: $text"
+            ;;
+        -s)
+            # Open README.md in Sublime Text
+            subl README.md
+            ;;
+        *)
+            echo "Usage: readme {-n|-a|-o|-s} \"description\""
+            echo "   -n   create new (fails if file exists)"
+            echo "   -a   append (starts on a new line)"
+            echo "   -o   overwrite"
+            echo "   -s   open README.md in Sublime Text"
+            ;;
+    esac
+}
+
+flagshow() {
+    # Check if README.md exists
+    if [ ! -f README.md ]; then
+        echo "README.md does not exist!"
+        return 1
+    fi
+
+    # Extract the last bash block from README.md
+    output=$(awk '/```bash/{flag=1; next} /```/{flag=0} flag{line[NR]=$0} END{for(i in line) print line[i]}' README.md)
+
+    if [ -z "$output" ]; then
+        echo "Not yet inputted"
+    else
+        echo "$output"
+    fi
+}
+
