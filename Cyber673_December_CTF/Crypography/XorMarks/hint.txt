@@ -1,0 +1,14 @@
+XOR Encryption Challenge
+========================
+
+You've intercepted an encrypted file. Intelligence suggests:
+
+1. The file uses XOR encryption with a repeating key
+2. The key is 4 bytes long
+3. The plaintext is a text document
+4. Standard flag format is DECCTF{...}
+
+Can you recover the original message and find the flag?
+
+HINT: If you know part of the plaintext, you can recover part of the key.
+      Think about what "DECCTF{" XORed with the ciphertext would give you...
