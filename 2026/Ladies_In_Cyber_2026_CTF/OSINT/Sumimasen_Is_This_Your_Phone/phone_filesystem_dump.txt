@@ -1,0 +1,45 @@
+[Phone Filesystem Recovery Report]
+
+Deleted Files Found:
+====================
+
+File 1:
+- Filename: my_secret_code.txt
+- Size: 156 bytes
+- Deleted: 2024-04-10 14:32:15
+- Data recovered: "User forgot password hint: 3ph45e_h0t_5pring_v1s1t_c0d3"
+- Status: Partially recoverable
+
+File 2:
+- Filename: travel_diary.docx
+- Size: 2048 bytes
+- Deleted: 2024-04-09 08:45:22
+- Snippet recovered: "...visited the hot springs near Hakone today. Met someone interesting named Tanaka Yuki..."
+- Status: Fragments recovered
+
+File 3:
+- Filename: passport_backup.jpg
+- Size: 4096 bytes
+- Deleted: 2024-04-08 19:23:01
+- Metadata recovered: Owner name "Yuki Tanaka", DOB: 1998-12-15, Passport number partial: KD***
+- Status: Thumbnail available
+
+File 4:
+- Filename: note_to_self.txt
+- Size: 89 bytes
+- Deleted: 2024-04-11 10:15:33
+- Data recovered: "Remember: Hakone hot springs 3-day pass code is: 3ph45e_h0t_5pring_v1s1t_c0d3"
+- Status: Fully recoverable
+
+File 5:
+- Filename: tokyo_travel_itinerary.pdf
+- Size: 8192 bytes
+- Deleted: 2024-04-07 22:11:45
+- Snippet recovered: "Day 3: Hakone visit, hot spring resort code TBC"
+- Status: Partial recovery
+
+Phone Owner Info Found:
+=======================
+Phone Name: "Yuki_iPhone"
+Last User: yuki.tanaka.1215
+System Language: Japanese/English

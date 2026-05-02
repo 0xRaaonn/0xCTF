@@ -1,0 +1,47 @@
+[Simulated Wireshark Export - Text representation]
+
+Packet 1:
+Time: 2024-04-15 14:23:45.123456
+Source: 192.168.1.100 (Your Laptop)
+Destination: 8.8.8.8:53 (Google DNS)
+Protocol: DNS
+Query: malware.tracking.48756e744f6e6965.example.com
+
+Packet 2:
+Time: 2024-04-15 14:23:46.456789
+Source: 192.168.1.100
+Destination: 45.142.120.99:80
+Protocol: HTTP
+GET /status/check?device=48756e744f6e6965&version=1&infected=true HTTP/1.1
+Host: suspicious-api.airport.local
+User-Agent: AirportWiFiBooster/2.1
+
+Packet 3:
+Time: 2024-04-15 14:23:47.789012
+Source: 45.142.120.99:80
+Destination: 192.168.1.100
+Protocol: HTTP
+HTTP/1.1 200 OK
+Response Body: {"status":"connected","command":"7365 6e64 2068 6f6d 6520 6c6f 6720 6669 6c65 73"}
+
+Packet 4:
+Time: 2024-04-15 14:23:48.901234
+Source: 192.168.1.100
+Destination: 8.8.8.8:53
+Protocol: DNS
+Query: exfiltrate.48756e744f6e6965.beacon.com
+
+Packet 5:
+Time: 2024-04-15 14:23:50.012345
+Source: 192.168.1.100
+Destination: 198.51.100.45:443
+Protocol: HTTPS
+TLS Handshake to: command-control.malicious-network.io
+Certificate: CN=command-control.malicious-network.io
+(Encrypted payload - cannot be decrypted without key)
+
+Analysis Summary:
+- Device is performing DNS queries to suspicious domains
+- HTTP requests contain encoded identifiers
+- C2 (Command & Control) communication detected
+- Possible data exfiltration attempt
